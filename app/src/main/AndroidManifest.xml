@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lifeassistant">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Calculator"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+        android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="ca-app-pub-9516357412573528~6144892011"/>
+
+        <activity android:name=".WaterActivity" />
+        <activity android:name=".CGPAActivity" />
+        <activity android:name=".AdvancedMathActivity" />
+        <activity android:name=".BodyActivity" />
+        <activity android:name=".LoanActivity" />
+        <activity android:name=".MortageActivity" />
+        <activity android:name=".TaxActivity" />
+        <activity android:name=".GradeActivity" />
+        <activity android:name=".MathActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".BroadcastReceiver1"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="pendingIntent">
+                </action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
